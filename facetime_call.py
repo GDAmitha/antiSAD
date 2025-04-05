@@ -373,17 +373,19 @@ def fully_automated_facetime_call(contact):
         print(f"An unexpected error occurred: {e}")
         return False
 
-if __name__ == "__main__":
-    # Check if running on macOS
-    if os.name != 'posix':
-        print("This script is designed for macOS.")
-        sys.exit(1)
+# if __name__ == "__main__":
+#     # Check if running on macOS
+#     if os.name != 'posix':
+#         print("This script is designed for macOS.")
+#         sys.exit(1)
     
-    # Get contact from command line argument if provided
-    if len(sys.argv) > 1:
-        contact = sys.argv[1]
-        fully_automated_facetime_call(contact)
-    else:
-        # Ask for input if no command line argument
-        contact = input("Enter phone number (with country code) or email to call: ")
-        fully_automated_facetime_call(contact)
+#     # Get contact from command line argument if provided
+#     if len(sys.argv) > 1:
+#         contact = sys.argv[1]
+#         fully_automated_facetime_call(contact)
+#     else:
+#         # Ask for input if no command line argument
+#         contact = input("Enter phone number (with country code) or email to call: ")
+#         fully_automated_facetime_call(contact)
+
+# fully_automated_facetime_call('+14085909699')

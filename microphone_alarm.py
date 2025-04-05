@@ -2,7 +2,7 @@ import speech_recognition as sr
 from playsound import playsound
 import time
 import os
-import facetime_call
+from facetime_call import fully_automated_facetime_call
 
 # Path to alarm sound file (replace with your own sound file)
 ALARM_SOUND = "alarm.wav"  # Make sure this file exists or replace with another audio file
@@ -47,7 +47,7 @@ def trigger_alarm():
     # Play alarm sound
     try:
         # playsound(ALARM_SOUND)
-        facetime_call(+14085909699)
+        fully_automated_facetime_call('+14085909699')
 
     except:
         print("Could not play alarm sound, using system beep")
